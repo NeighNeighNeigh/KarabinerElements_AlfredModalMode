@@ -1,0 +1,154 @@
+{
+  "title": "Alfred Modal Mode",
+  "rules": [
+
+    {
+      "description": "Alfred Modal Mode",
+      "manipulators": [{
+        "from": {
+          "key_code": "a",
+          "modifiers": {
+            "mandatory": ["left_command", "left_control", "left_option", "left_shift"]
+          }
+        },
+        "to": [{
+          "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":1}' & '/Users/nathan/Data/Maintenance/Systems/Karabiner Elements/Scripts/alfred_modal_script.applescript' \"modal_01\" \"com.nathan.modaldemo\" && '/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":0}'"
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 0,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_1"
+        },
+        "to": [{
+          "key_code": "keypad_1",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_2"
+        },
+        "to": [{
+          "key_code": "keypad_2",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_3"
+        },
+        "to": [{
+          "key_code": "keypad_3",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_4"
+        },
+        "to": [{
+          "key_code": "keypad_4",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_5"
+        },
+        "to": [{
+          "key_code": "keypad_5",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_6"
+        },
+        "to": [{
+          "key_code": "keypad_6",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_7"
+        },
+        "to": [{
+          "key_code": "keypad_7",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_8"
+        },
+        "to": [{
+          "key_code": "keypad_8",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }, {
+        "from": {
+          "key_code": "keypad_9"
+        },
+        "to": [{
+          "key_code": "keypad_9",
+          "modifiers": ["left_command"]
+        }],
+        "conditions": [{
+          "name": "layer_alfred_modal_mode",
+          "value": 1,
+          "type": "variable_if"
+        }],
+        "type": "basic"
+      }]
+
+    }
+
+  ]
+}
