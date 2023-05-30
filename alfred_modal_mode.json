@@ -12,7 +12,7 @@
           }
         },
         "to": [{
-          "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":1}' & 'path/to/alfred_modal_mode.applescript' \"modal_01\" \"com.nathan.modaldemo\" && '/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":0}'"
+          "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":1}' & 'path/to/alfred_modal_mode.applescript' modal_01 com.nathan.modaldemo && '/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --set-variables '{\"layer_alfred_modal_mode\":0}'"
         }],
         "conditions": [{
           "name": "layer_alfred_modal_mode",
